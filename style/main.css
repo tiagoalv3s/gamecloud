@@ -1,0 +1,134 @@
+:root{
+    --vermelho:#e50914; 
+    --preta:#141414; 
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+    background: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-right:20px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/gamecloud/img/banner.jpg');
+    
+    height: 800px;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.horizon-logo{
+    width: 450px;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50); 
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 6px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 0;
+}
+
+.offers{
+    margin: 30px 20px 10px 20px;
+    font-size: 22px;
+}
+
+.popular{
+    margin: 5px 20px 10px 20px;
+    font-size: 22px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #141414;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(53, 53, 53);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(94, 94, 94);
+}
